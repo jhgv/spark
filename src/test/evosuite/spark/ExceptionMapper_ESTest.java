@@ -24,7 +24,7 @@ public class ExceptionMapper_ESTest extends ExceptionMapper_ESTest_scaffolding {
       ExceptionMapper exceptionMapper0 = ExceptionMapper.getInstance();
       Class<Exception> class0 = Exception.class;
       ExceptionHandlerImpl<Exception> exceptionHandlerImpl0 = (ExceptionHandlerImpl<Exception>) mock(ExceptionHandlerImpl.class, new ViolatedAssumptionAnswer());
-      doReturn(null, null).when(exceptionHandlerImpl0).toString();
+      doReturn( (Object) null).when(exceptionHandlerImpl0).toString();
       exceptionMapper0.map(class0, exceptionHandlerImpl0);
       Exception exception0 = mock(Exception.class, new ViolatedAssumptionAnswer());
       ExceptionHandlerImpl exceptionHandlerImpl1 = exceptionMapper0.getHandler(exception0);
